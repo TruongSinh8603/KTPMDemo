@@ -1,52 +1,511 @@
-    1  git clone https://github.com/TruongSinh8603/KTPMDemo.git
-    2  cd KTPMDemo/
-    3  git status
-    4  git add test.txt
-    5  git status
-    6  git commit -m "init project
-    7  git commit -m 
-    8  git commit -m "init project"
-    9   git config --global user.email "2151013080sinh@ou.edu.vn"
-   10   git config --global user.name "2151013080sinh@ou.edu.vn"
-   11  git commit -m "init project"
-   12  git status
-   13  git push origin main
-   14  git branch
-   15  git branch feature-test
-   16  git branch
-   17  git checkout feature-test 
-   18  git branch
-   19  git status
-   20  git add test_feature_branch.txt 
-   21  git status
-   22  git commit -m "create a new branch"
-   23  git push origin feature-test 
-   24  git checkout main
-   25  git status
-   26  git status
-   27  git add test.txt 
-   28  git add README.md 
-   29  git status
-   30  git commit -m "from main"
-   31  git push origin main
-   32  git pull
-   33  git status
-   34  git push origin main
-   35  git branch
-   36  git checkout feature-test 
-   37  git status
-   38  git add README.md 
-   39  git commit -m "from feature-test"
-   40  git pull origin feature-test 
-   41  git status
-   42  git status
-   43  git checkout main
-   44  git checkout feature-test 
-   45  git pull origin feature-test 
-   46  git push origin feature-test 
-   47  git merge main
-   48  git status
-   49  git add README.md 
-   50  git commit -m 'resolve conflict'
-   51  git push origin feature-test 
-   52  history > history.txt
+
+admin@501 MINGW64 ~/Desktop
+$ git clone https://github.com/TruongSinh8603/KTPMDemo.git
+Cloning into 'KTPMDemo'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (4/4), done.
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@501 MINGW64 ~/Desktop
+$ cd KTPMDemo/
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git add test.txt
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git commit -m "init project
+> ^C
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git commit -m
+error: switch `m' requires a value
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git commit -m "init project"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'admin@501.(none)')
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$  git config --global user.email "2151013080sinh@ou.edu.vn"
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$  git config --global user.name "2151013080sinh@ou.edu.vn"
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git commit -m "init project"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+[main 5440d0b] init project
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 306 bytes | 306.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TruongSinh8603/KTPMDemo.git
+   e238565..5440d0b  main -> main
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git branch
+* main
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git branch feature-test
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git branch
+  feature-test
+* main
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git checkout feature-test
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+Switched to branch 'feature-test'
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git branch
+* feature-test
+  main
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch feature-test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test_feature_branch.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git add test_feature_branch.txt
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch feature-test
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test_feature_branch.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git commit -m "create a new branch"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+[feature-test a55550d] create a new branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test_feature_branch.txt
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git push origin feature-test
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature-test' on GitHub by visiting:
+remote:      https://github.com/TruongSinh8603/KTPMDemo/pull/new/feature-test
+remote:
+To https://github.com/TruongSinh8603/KTPMDemo.git
+ * [new branch]      feature-test -> feature-test
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git checkout main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+Switched to branch 'main'
+M       test.txt
+Your branch is up to date with 'origin/main'.
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git add test.txt
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git add README.md
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        modified:   test.txt
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git commit -m "from main"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+[main 8f87d8b] from main
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git push origin main
+To https://github.com/TruongSinh8603/KTPMDemo.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/TruongSinh8603/KTPMDemo.g
+it'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git pull
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 906 bytes | 453.00 KiB/s, done.
+From https://github.com/TruongSinh8603/KTPMDemo
+   5440d0b..709f8cf  main       -> origin/main
+Merge made by the 'ort' strategy.
+ test_feature_branch.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test_feature_branch.txt
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git push origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 648 bytes | 648.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/TruongSinh8603/KTPMDemo.git
+   709f8cf..94b5538  main -> main
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git branch
+  feature-test
+* main
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git checkout feature-test
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+Switched to branch 'feature-test'
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch feature-test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git add README.md
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git commit -m "from feature-test"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+[feature-test b62d79a] from feature-test
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git pull origin feature-test
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+From https://github.com/TruongSinh8603/KTPMDemo
+ * branch            feature-test -> FETCH_HEAD
+Already up to date.
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch feature-test
+nothing to commit, working tree clean
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch feature-test
+nothing to commit, working tree clean
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git checkout main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (main)
+$ git checkout feature-test
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+Switched to branch 'feature-test'
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git pull origin feature-test
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+From https://github.com/TruongSinh8603/KTPMDemo
+ * branch            feature-test -> FETCH_HEAD
+Already up to date.
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git push origin feature-test
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TruongSinh8603/KTPMDemo.git
+   a55550d..b62d79a  feature-test -> feature-test
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git merge main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test|MERGING)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch feature-test
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   test.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md
+
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test|MERGING)
+$ git add README.md
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test|MERGING)
+$ git commit -m 'resolve conflict'
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[feature-test 3526289] resolve conflict
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ git push origin feature-test
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/TruongSinh8603/KTPMDemo.git
+   b62d79a..3526289  feature-test -> feature-test
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$ history > history.txt
+
+admin@501 MINGW64 ~/Desktop/KTPMDemo (feature-test)
+$
