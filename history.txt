@@ -1,0 +1,52 @@
+    1  git clone https://github.com/TruongSinh8603/KTPMDemo.git
+    2  cd KTPMDemo/
+    3  git status
+    4  git add test.txt
+    5  git status
+    6  git commit -m "init project
+    7  git commit -m 
+    8  git commit -m "init project"
+    9   git config --global user.email "2151013080sinh@ou.edu.vn"
+   10   git config --global user.name "2151013080sinh@ou.edu.vn"
+   11  git commit -m "init project"
+   12  git status
+   13  git push origin main
+   14  git branch
+   15  git branch feature-test
+   16  git branch
+   17  git checkout feature-test 
+   18  git branch
+   19  git status
+   20  git add test_feature_branch.txt 
+   21  git status
+   22  git commit -m "create a new branch"
+   23  git push origin feature-test 
+   24  git checkout main
+   25  git status
+   26  git status
+   27  git add test.txt 
+   28  git add README.md 
+   29  git status
+   30  git commit -m "from main"
+   31  git push origin main
+   32  git pull
+   33  git status
+   34  git push origin main
+   35  git branch
+   36  git checkout feature-test 
+   37  git status
+   38  git add README.md 
+   39  git commit -m "from feature-test"
+   40  git pull origin feature-test 
+   41  git status
+   42  git status
+   43  git checkout main
+   44  git checkout feature-test 
+   45  git pull origin feature-test 
+   46  git push origin feature-test 
+   47  git merge main
+   48  git status
+   49  git add README.md 
+   50  git commit -m 'resolve conflict'
+   51  git push origin feature-test 
+   52  history > history.txt
